@@ -47,7 +47,7 @@ void matrixOneBigArray(int n, int m){
     for(int i = 0; i < n*m; i++){
         printf("%f", big[i]);
         printf("\t");
-        if(i%(n-1) == 0 && i > 0){
+        if((int)big[i]%n == 0 && i > 0){
             printf("\n");
         }
     }
