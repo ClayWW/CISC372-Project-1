@@ -36,7 +36,7 @@ void matrixOneBigArray(int n, int m){
     float* big = malloc(n*m*sizeof(float));
     for(int i = 0; i < n*m; i++){
         if(i%n == 0){
-            ptr[i] = (float*)malloc(n*sizeof(float));
+            ptr[i] = malloc(n*sizeof(float));
         }
     }
     float current = 0;
@@ -63,7 +63,7 @@ void matrixOneBigArray(int n, int m){
     printf("\n");
 
 
-    for(int i = 0; i < m; i++){ //free every pointer in ptr array
+    for(int i = 0; i < m; i++){
         free(ptr[i]);
     }
     free(ptr);
