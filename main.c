@@ -64,6 +64,7 @@ void matrixOneBigArray(int n, int m){
     
     for(int i = 0; i<m; i++){ //free error here
         free(ptr[i]);
+        printf("free works %d",i);
     }
     
     free(ptr);
