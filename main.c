@@ -66,7 +66,7 @@ void matrixOneBigArray(int n, int m){
     for(int i = 0; i < m; i++){ //free every pointer in ptr array
         free(ptr[i]);
     }
-    //free(ptr);
+    free(ptr);
     free(big);
 
 }
