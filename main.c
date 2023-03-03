@@ -62,7 +62,7 @@ void matrixOneBigArray(int n, int m){
 
     printf("\n");
     
-    for(int i = 0; i<n; i++){ //free error here
+    for(int i = 0; i<m; i++){ //free error here
         free(ptr[i]);
     }
     
