@@ -69,6 +69,6 @@ void matrixOneBigArray(int n, int m){
 
 int main(int argc, char** argv){
     matrixArrayOfArrays(N,M);
-    matrixOneBigArray(N,M);
+    //matrixOneBigArray(N,M);
     return 0;
 }
