@@ -59,7 +59,7 @@ void matrixOneBigArray(int n, int m){
     }
 
     free(ptr);
-    //free(big);
+    free(big);
 
 }
 
