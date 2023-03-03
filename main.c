@@ -53,14 +53,14 @@ void matrixOneBigArray(int n, int m){
     }
 
     printf("\n");
-/*
+
     for(int i = 0; i<m; i++){
         free(ptr[i]);
     }
 
     free(ptr);
-    free(big);
-*/
+    //free(big);
+
 }
 
 int main(int argc, char** argv){
