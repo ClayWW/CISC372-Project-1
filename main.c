@@ -5,9 +5,9 @@
 #define M 6
 
 void matrixArrayOfArrays(int n, int m){
-    float** ptr = (float*)malloc(m*sizeof(float*)); //pointer array of length m meaning there are m many pointers
+    float** ptr = malloc(m*sizeof(float*)); //pointer array of length m meaning there are m many pointers
     for(int i = 0; i < m; i++){
-        ptr[i] = (float*)malloc(n*sizeof(float)); //for each element in pointer array, create an array of length n
+        ptr[i] = malloc(n*sizeof(float)); //for each element in pointer array, create an array of length n
     }
     float current = 0; //current value in full array
     for(int i = 0; i < m; i++){
@@ -30,8 +30,8 @@ void matrixArrayOfArrays(int n, int m){
 }
 
 void matrixOneBigArray(int n, int m){
-    float** ptr = (float*)malloc(m*sizeof(float*));
-    float* big = (float*)malloc(n*m*sizeof(float));
+    float** ptr = malloc(m*sizeof(float*));
+    float* big = malloc(n*m*sizeof(float));
     for(int i = 0; i < n*m; i++){
         if(i%n == 0){
             ptr[i] = (float*)malloc(n*sizeof(float));
@@ -45,7 +45,7 @@ void matrixOneBigArray(int n, int m){
     for(int i = 0; i < n*m; i++){
         printf("%f", big[i]);
         printf("\t");
-        if(i%6 == 0){
+        if(i%n == 0){
             printf("\n");
         }
     }
