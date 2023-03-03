@@ -23,6 +23,8 @@ void matrixArrayOfArrays(int n, int m){
         printf("\n");
     }
 
+    printf("\n");
+
     for(int i = 0; i < m; i++){ //free every pointer in ptr array
         free(ptr[i]);
     }
@@ -45,10 +47,12 @@ void matrixOneBigArray(int n, int m){
     for(int i = 0; i < n*m; i++){
         printf("%f", big[i]);
         printf("\t");
-        if(i%n == 0 && i > 0){
+        if(i%(n-1) == 0 && i > 0){
             printf("\n");
         }
     }
+
+    printf("\n");
 
     for(int i = 0; i<m; i++){
         free(ptr[i]);
