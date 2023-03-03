@@ -72,3 +72,20 @@ int main(int argc, char** argv){
     matrixOneBigArray(N,M);
     return 0;
 }
+
+/*
+5a) Creating an array of arrays does not require one chunk of continuous memory which is a pro but because of this accessing and allocation time will not be as quick which is a con.
+An array of arrays is dynamically allocated memory, allowing for quick changes to the arrays in use such as deleting or adding any elements. 
+Creating one large array including pointers is easily traversed, but such an array needs to exist in one continuous chunk of memory which is a con. One large array
+is also statically allocated memory making it much more difficult to make changes to the array. An array of arrays is also easier to set up (or at least something I 
+am more accustomed to) as it allows us to locate and place our pointers in the proper location using only a for loop while a large array requires a more intricate process 
+to lay down pointers.
+
+
+5b) If I was in a situation where my memory was beginning to get a little too crowded, using an array of arrays would be a better approach because
+the memory that the array of arrays is using can be dispersed into wherever it fits, it is significantly more manageable to introduce when memory is getting close to
+capacity. But if I was in a situation where the time to access certain memory is what I am concerned with, then the one big array approach would be better. Because both
+strategies have their own pros and cons, it really comes down to what the user is concerned about whether that be memory size, memory location, accessing speed, the ease at
+which changes can be made to the array, etc. 
+
+*/
