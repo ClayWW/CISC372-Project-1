@@ -43,12 +43,19 @@ void matrixOneBigArray(int n, int m){
     for(int i = 0; i < n*m; i++){
         big[i] = ++current;
     }
-
+    /*
     for(int i = 0; i < n*m; i++){
         printf("%f", big[i]);
         printf("\t");
         if((int)big[i]%n == 0 && i > 0){
             printf("\n");
+        }
+    }
+    */
+    for(int j = 0; j < n; j++){
+        for(int i = 0; i < m; i++){
+            printf("%f",big[(i*n)]);
+            printf("\t");
         }
     }
 
@@ -58,7 +65,7 @@ void matrixOneBigArray(int n, int m){
         free(ptr[i]);
     }
     
-    //free(ptr);
+    free(ptr);
     free(big);
 
 }
