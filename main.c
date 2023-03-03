@@ -57,6 +57,7 @@ void matrixOneBigArray(int n, int m){
             printf("%f",big[(i*n)]);
             printf("\t");
         }
+        printf("\n");
     }
 
     printf("\n");
